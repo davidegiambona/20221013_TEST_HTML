@@ -1,14 +1,51 @@
-<!DOCTYPE html = "it">
-<html>
-  <head>
-    <tittle>My first page</tittle>
-    </head>
-    <body>
-      <h1>TITOLO</h1>
-      <p>il mio primo paragrafo</p>
-      <button>My first button</button>
-      <div>
-        <a href = "https://www.apple.com/it/" target="_blank">Sito Apple</a>
-      </div>
-    </body
-  </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orologio</title>
+    
+    <style>
+        body {
+            background-color: white;
+        }
+
+        .orologio {
+            color: lime;
+            border: 10rem;
+            border-color: lime;
+            height: 600px;
+            width: 600px;
+        }
+
+        #orologio {
+            border-color: lime;
+            border-style: solid;
+            border-width: 5px;
+            height: 300px;
+            width: 300px;
+            position: relative;
+            top: -550px;
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        var number = 1;
+
+        function orologio() {
+            for(var i = 0;i<12;i++) {
+                document.write(number + " ");
+                number++;
+            }
+        }
+        orologio();
+    </script>
+    
+    <h1 class = "orologio">Orologio</h1>
+    <img id = "orologio" src="Orologio-da-parete-Gela.png" alt="orologio">
+
+</body>
+</html>
