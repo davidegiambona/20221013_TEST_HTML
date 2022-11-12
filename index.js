@@ -1,9 +1,10 @@
-var number = 0;
 
-function takeNumberAndEdit() {
-    document.write("numero originario: ", number, ", ");
-    var numberChanged = 13;
-    number = numberChanged;
-    document.write("\n numero cambiato: ", number);
+var number = 4;
+document.write("your actually number: ", number);
+
+document.getElementById("myButton").onclick = function() {
+
+    var changeNumber = document.getElementById("myNumber").value;
+    
+    document.write("the number changed is: ", changeNumber);
 }
-takeNumberAndEdit();
