@@ -1,4 +1,3 @@
-
 var number = 4;
 document.write("your actually number: ", number);
 
